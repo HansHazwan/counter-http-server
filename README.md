@@ -1,4 +1,24 @@
 # Hello, Guys
 
-I'm developing a simple http server. It will incrementing and decrementing a counter. the counter will 
-change when receive a request.
+I'm changing the concept. Previus, the requests are GET method. Now, I use GET, POST and DELETE.
+
+### Increment
+```
+POST /count HTTP/1.1
+
+```
+
+### Decrement
+```
+DELETE /count HTTP/1.1
+```
+
+### Get counter value
+```
+GET /count HTTP/1.1
+```
+
+### Get Page
+```
+GET / HTTP/1.1
+```
