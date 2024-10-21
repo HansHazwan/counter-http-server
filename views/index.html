@@ -3,10 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <title>Counter App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Roboto;
+            }
+            main {
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 4px;
+            }
+            .buttons {
+                width: 40vw;
+                display: flex;
+                gap: 40px;
+                margin-top: 30px;
+            }
+            .buttons button {
+                flex-grow: 1;
+            }
+        </style>
     </head>
     <body>
-        <div class="container">
-            {count}
-        </div>
+        <main>
+            <h4 id="count">Count: 0</h4>
+            <div class="buttons">
+                <button id="increment_button">+</button>
+                <button id="decrement_button">-</button>
+            </div>
+        </main>
+
+        <script>
+            document.getElementById("increment_button").addEventListener("click" () => {
+                fetch
+            });
+        </script>
     </body>
 </html>
